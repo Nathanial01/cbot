@@ -1,0 +1,47 @@
+{
+    "name": "cyrox/chatbot",
+    "description": "Light chatbot that can be embedded in any website via composer",
+    "type": "library",
+    "license": "MIT",
+    "version": "1.0.0",
+    "autoload": {
+        "psr-4": {
+            "Cyrox\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Cyrox\\Provider\\ChatbotServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "Nathanial Samuel",
+            "email": "nathanial.samuel@example.com",
+            "homepage": "https://cyrox.org"
+        }
+    ],
+    "keywords": [
+        "chatbot",
+        "openai",
+        "laravel",
+        "php",
+        "package"
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^8.0",
+        "openai-php/client": "^0.10",
+        "openai-php/laravel": "^0.10",
+        "symfony/http-client": "^7.1",
+        "nyholm/psr7": "^1.8"
+    },
+    "config": {
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
+    }
+}
